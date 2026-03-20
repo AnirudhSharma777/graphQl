@@ -1,4 +1,4 @@
-package com.example.graphql;
+package com.example.graphql.modal;
 
 
 import org.springframework.data.annotation.Id;
