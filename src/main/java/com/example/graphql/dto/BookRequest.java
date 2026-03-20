@@ -1,5 +1,4 @@
-package com.example.graphql;
-
+package com.example.graphql.dto;
 
 public record BookRequest(
     String name,
