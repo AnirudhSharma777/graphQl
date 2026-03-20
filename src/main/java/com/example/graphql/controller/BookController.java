@@ -9,7 +9,7 @@ import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
-import com.example.graphql.BookRequest;
+import com.example.graphql.dto.BookRequest;
 import com.example.graphql.modal.Author;
 import com.example.graphql.modal.Book;
 import com.example.graphql.repository.BookRepository;
