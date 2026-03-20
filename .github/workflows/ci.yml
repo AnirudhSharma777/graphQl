@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - develop
-      - main
+      - start
 
   pull_request:
     branches:
-      - main
+      - start
 
 jobs:
   build-and-docker:
