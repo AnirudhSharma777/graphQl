@@ -1,4 +1,4 @@
-package com.example.graphql;
+package com.example.graphql.dto;
 
 public record AuthorInput(
     String firstName,
