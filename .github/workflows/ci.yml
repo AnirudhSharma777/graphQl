@@ -34,9 +34,11 @@ jobs:
       #   run: ./gradlew test
 
       # ✅ Extract repo name only (remove owner)
+      # - name: Set image name
+      #   run: echo "IMAGE_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)" >> $GITHUB_ENV
       - name: Set image name
-        run: echo "IMAGE_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)" >> $GITHUB_ENV
-
+        run: echo "IMAGE_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2 | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+      
       # 🐳 Login to Docker Hub (only on main)
       - name: Login to Docker Hub
         if: github.ref == 'refs/heads/start'
