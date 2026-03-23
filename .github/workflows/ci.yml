@@ -51,6 +51,6 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest .
 
       # 🐳 Push Docker Image
-      - name: Push Docker Image
+      - name: Push Docker Image`
         if: github.ref == 'refs/heads/main'
         run: docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
