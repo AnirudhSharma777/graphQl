@@ -54,5 +54,5 @@ jobs:
 
       # 🐳 Push Docker Image
       - name: Push Docker Image
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/start'
         run: docker push ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
